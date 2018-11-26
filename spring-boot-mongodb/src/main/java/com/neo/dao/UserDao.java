@@ -11,6 +11,8 @@ public interface UserDao  {
 
     public UserEntity findUserByUserName(String userName);
 
+    public UserEntity findUserById(Double id);
+
     public int updateUser(UserEntity user);
 
     public void deleteUserById(Long id);

@@ -33,6 +33,12 @@ public class UserDaoTest {
     }
 
     @Test
+    public void findUserById(){
+        UserEntity user= userDao.findUserById((double) 2l);
+        System.out.println("user is "+user);
+    }
+
+    @Test
     public void updateUser(){
         UserEntity user=new UserEntity();
         user.setId(2l);
